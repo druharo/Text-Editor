@@ -18,7 +18,11 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      
+      new HtmlWebpackPlugin({
+        hash: true,
+        template: './index.html',
+        filename: 'index.html' //relative to root of the application
+      })
     ],
 
     module: {
