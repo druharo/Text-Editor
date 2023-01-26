@@ -7,12 +7,12 @@
     "start:dev": "",
     "start": "concurrently \"npm:server\" \"npm:client\"",
     "server": "cd server && npm run server",
-    "build": "cd client && npm run build",
+    "build": "cd client && npm install && npm run build",
     "install": "",
     "client": "cd client && npm start"
   },
   "keywords": [],
-  "author": "",
+  "author": "Denis Ruharo",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
